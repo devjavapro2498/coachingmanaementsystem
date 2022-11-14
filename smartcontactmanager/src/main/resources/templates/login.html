@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html   xmlns:th="http:www.thymeleaf.org" th:replace="base::layout(~{::section})" >
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Contact-Management-System</title>
+</head>
+<body>
+<section class="login">
+<div class ="container">
+
+
+<div class ="row">
+
+
+<div class ="col-md-8 offset-md-2">
+
+<div class ="my-login mt-2" >
+<div class ="container text-center">
+<img class="" style="width:80px;"    alt="" th:src="@{/image/logiIcon.png}">
+</div>
+<h1 class ="text-center">Welcome To  SMS</h1>
+<form action="" th:action="@{/do_login}" method="post" >
+
+<!-- name field-->
+ <div class="form-group">
+    <label for="name_field" class="form-label">User Name:</label>
+    <input type="text" class="form-control" id="name_field" aria-describedby="emailHelp" placeholder="UserName/E-mail" required="required">
+ 
+  </div>
+  
+  <!-- email field-->
+  
+ <!-- <div class="form-group">
+    <label for="email_field" class="form-label">Enter Email:</label>
+    <input type="text" class="form-control" id="email_field" aria-describedby="emailHelp" placeholder="Enter Your E-mail" required="required">
+ 
+  </div> -->
+  
+   <!-- password field-->
+ <div class="form-group">
+    <label for="password_field" class="form-label">Enter Password:</label>
+    <input type="text" class="form-control" id="password_field" aria-describedby="emailHelp" placeholder="Enter Your Password" required="required">
+ 
+  </div>
+ 
+   <!--Space for about fiels  -->
+  <!-- <div class="form-group mt-3">
+  <textarea  placeholder="Enter Something yourself" rows="7" class="form-control"></textarea>
+  </div> -->
+  <!-- Adding button -->
+  <div class ="container text-center mt-3">
+  <button type="submit" class="btn bg-primary text-white  btn-block">Signup</button>
+  <button type ="submit" class="btn   btn-warning btn-block">Login</button>
+  </div>
+  
+
+</form>
+
+
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+</body>
+</html>
